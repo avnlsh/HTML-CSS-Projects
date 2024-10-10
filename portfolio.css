@@ -1,17 +1,19 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+/* Navbar styles */
 nav {
     background-color: #333;
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,41 +24,76 @@ nav {
     color: white;
     text-decoration: none;
     padding: 10px;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    color: #ff9800;
 }
 
+/* Welcome section styles */
 #welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #ff9800 0%, #f44336 100%);
     text-align: center;
+    color: white;
 }
 
+#welcome-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#welcome-section p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+.highlight {
+    color: #ffd700;
+}
+
+/* Projects section styles */
 #projects {
     padding: 60px 20px;
     background: #fff;
     text-align: center;
 }
 
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
 .project-tile {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-tile a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
+.project-tile a:hover {
+    color: #ff9800;
+}
+
+/* Footer styles */
 footer {
     background: #333;
     color: white;
@@ -65,6 +102,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
 }
 
 /* Media queries */
@@ -76,13 +114,4 @@ footer {
     .nav-link {
         margin: 0 20px;
     }
-}
-
-/* Flexbox usage example */
-#welcome-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
