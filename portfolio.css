@@ -57,6 +57,52 @@ nav {
     color: #ffd700;
 }
 
+/* About section styles */
+#about {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Skills section styles */
+#skills {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
 /* Projects section styles */
 #projects {
     padding: 60px 20px;
