@@ -40,13 +40,15 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #cad2e2;
+    background: url(background.jpg) no-repeat center center/cover;
     text-align: center;
-    color: #2e3a46;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #welcome-section h1 {
-    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
     margin: 0;
 }
 
