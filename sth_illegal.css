@@ -55,12 +55,13 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background-color: #FFD0D7
+    
 }
 
 td {
     padding: 10px;
     border: 1px solid #ddd;
+    background-color: #FFD0D7
 }
 
 img {
